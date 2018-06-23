@@ -1,7 +1,6 @@
 import random
 
-print("THE RULES")
-print("")
+print("THE RULES\n")
 print("This is a move based game, and the objective is to kill your opponent.")
 print("Your health will start at 100.")
 print("To play, you will have a variety of moves at your disposal.")
@@ -15,7 +14,7 @@ person2 = input("Enter player two's name")
 
 whoGoesFirst = ""
 x = ""
-retardCheck = 0
+SpellingCheck = 0
 attackVal = 0
 
 if random.randint(0, 1) == 0:
@@ -34,14 +33,14 @@ while person1HP > 0 and person2HP > 0:
         print(person1 + " HP=" + str(person1HP))
         print(person2 + " HP=" + str(person2HP))
 
-        while retardCheck == 0:
+        while SpellingCheck == 0:
             print("")
             x = input(person1 + ", would you like to use attack 1, attack 2, or heal?")
             if x == "attack 1" or x == "attack 2" or x == "heal":
-                retardCheck = 1
+                SpellingCheck = 1
             else:
                 print("you must have had a spelling error, try again.")
-        retardCheck = 0
+        SpellingCheck = 0
 
         print("")
         if x == "attack 1":
@@ -72,14 +71,14 @@ while person1HP > 0 and person2HP > 0:
             print(person1 + " HP=" + str(person1HP))
             print(person2 + " HP=" + str(person2HP))
 
-            while retardCheck == 0:
+            while SpellingCheck == 0:
                 print("")
                 x = input(person2 + ", would you like to use attack 1, attack 2, or heal?")
                 if x == "attack 1" or x == "attack 2" or x == "heal":
-                    retardCheck = 1
+                    SpellingCheck = 1
                 else:
                     print("you must have had a spelling error, try again.")
-            retardCheck = 0
+            SpellingCheck = 0
 
             print("")
             if x == "attack 1":
@@ -109,14 +108,14 @@ while person1HP > 0 and person2HP > 0:
         print(person2 + " HP=" + str(person2HP))
         print(person1 + " HP=" + str(person1HP))
 
-        while retardCheck == 0:
+        while SpellingCheck == 0:
             print("")
             x = input(person2 + ", would you like to use attack 1, attack 2, or heal?")
             if x == "attack 1" or x == "attack 2" or x == "heal":
-                retardCheck = 1
+                SpellingCheck = 1
             else:
                 print("you must have had a spelling error, try again.")
-        retardCheck = 0
+        SpellingCheck = 0
 
         print("")
         if x == "attack 1":
@@ -147,14 +146,14 @@ while person1HP > 0 and person2HP > 0:
             print(person2 + " HP=" + str(person2HP))
             print(person1 + " HP=" + str(person1HP))
 
-            while retardCheck == 0:
+            while SpellingCheck == 0:
                 print("")
                 x = input(person1 + ", would you like to use attack 1, attack 2, or heal?")
                 if x == "attack 1" or x == "attack 2" or x == "heal":
-                    retardCheck = 1
+                    SpellingCheck = 1
                 else:
                     print("you must have had a spelling error, try again.")
-            retardCheck = 0
+            SpellingCheck = 0
 
             print("")
             if x == "attack 1":
